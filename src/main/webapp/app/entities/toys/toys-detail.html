@@ -1,0 +1,35 @@
+
+<div>
+    <h2><span>Toys</span> {{vm.toys.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Name</span></dt>
+        <dd>
+            <span>{{vm.toys.name}}</span>
+        </dd>
+        <dt><span>Price</span></dt>
+        <dd>
+            <span>{{vm.toys.price}}</span>
+        </dd>
+        <dt><span>Category</span></dt>
+        <dd>
+            <span>{{vm.toys.category}}</span>
+        </dd>
+        <dt><span data-translate="myappApp.toys.avg_price">Avg Price</span></dt>
+        <dd>
+            <span>{{vm.toys.avg_price}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="toys-detail.edit({id:vm.toys.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm"> Edit</span>
+    </button>
+</div>
