@@ -20,8 +20,19 @@ public class Books implements Serializable {
 
     @Column(name = "title")
     private String title;
+    
+    @Column(name = "author")
+    private String author;
 
-    @ManyToOne
+    public String getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	@ManyToOne
     private User user;
 
     public Long getId() {
