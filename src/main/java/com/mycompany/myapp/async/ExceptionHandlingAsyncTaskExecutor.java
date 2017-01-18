@@ -17,7 +17,8 @@ public class ExceptionHandlingAsyncTaskExecutor implements AsyncTaskExecutor,
     private final AsyncTaskExecutor executor;
 
     public ExceptionHandlingAsyncTaskExecutor(AsyncTaskExecutor executor) {
-        this.executor = executor;
+
+    	this.executor = executor;
     }
 
     @Override
