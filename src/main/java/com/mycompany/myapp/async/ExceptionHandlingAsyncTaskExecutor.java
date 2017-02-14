@@ -41,7 +41,7 @@ public class ExceptionHandlingAsyncTaskExecutor implements AsyncTaskExecutor,
             }
         };
     }
-
+//komentarz test
     private Runnable createWrappedRunnable(final Runnable task) {
         return () -> {
             try {

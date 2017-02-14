@@ -42,7 +42,7 @@ public class LoggingAspect {
         }
         //komentarz do kopii
     }
-
+//drugi kom
     @Around("loggingPointcut()")
     public Object logAround(ProceedingJoinPoint joinPoint) throws Throwable {
         if (log.isDebugEnabled()) {
