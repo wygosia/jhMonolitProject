@@ -40,6 +40,7 @@ public class LoggingAspect {
             log.error("Exception in {}.{}() with cause = {}", joinPoint.getSignature().getDeclaringTypeName(),
                 joinPoint.getSignature().getName(), e.getCause() != null? e.getCause() : "NULL");
         }
+        //komentarz do kopii
     }
 
     @Around("loggingPointcut()")
