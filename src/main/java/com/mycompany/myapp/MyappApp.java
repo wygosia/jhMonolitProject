@@ -25,7 +25,7 @@ import java.util.Collection;
 @EnableAutoConfiguration(exclude = { MetricFilterAutoConfiguration.class, MetricRepositoryAutoConfiguration.class })
 @EnableConfigurationProperties({ JHipsterProperties.class, LiquibaseProperties.class })
 public class MyappApp {
-
+//kkkk
     private static final Logger log = LoggerFactory.getLogger(MyappApp.class);
 
     @Inject
