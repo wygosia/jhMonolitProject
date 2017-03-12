@@ -26,10 +26,10 @@ public class ExceptionHandlingAsyncTaskExecutor implements AsyncTaskExecutor,
         executor.execute(createWrappedRunnable(task));
     }
 
-    
+
     @Override
     public void execute(Runnable task, long startTimeout) {
-    	
+
         executor.execute(createWrappedRunnable(task), startTimeout);
     }
 
@@ -54,7 +54,7 @@ public class ExceptionHandlingAsyncTaskExecutor implements AsyncTaskExecutor,
             }
         };
     }
-
+//a
     protected void handle(Exception e) {
         log.error("Caught async exception", e);
     }

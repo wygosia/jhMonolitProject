@@ -1,5 +1,6 @@
 package com.mycompany.myapp.config;
 
+import com.google.common.collect.Lists;
 import org.apache.commons.lang3.CharEncoding;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +16,7 @@ public class ThymeleafConfiguration {
     @Bean
     @Description("Thymeleaf template resolver serving HTML 5 emails")
     public ClassLoaderTemplateResolver emailTemplateResolver() {
+        Lists.newArrayList()
         ClassLoaderTemplateResolver emailTemplateResolver = new ClassLoaderTemplateResolver();
         emailTemplateResolver.setPrefix("mails/");
         emailTemplateResolver.setSuffix(".html");
